@@ -6,25 +6,61 @@
 .wrapper { /*центровщик контента*/
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 body {
     font-family: sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-image: /*с фоном еще надо поработать*/
+        linear-gradient(170deg, #fde848 40%, transparent 40%),
+        linear-gradient(5deg, #fde848 30%, white 30%),
+        linear-gradient(to bottom, #fde848, #fde848);
+    background-size: 100%, 100%, 1000% 1000%;
+    background-repeat: no-repeat;
+    background-position: 0, 0, 0 1000px;
+}
+
+/*кнопка*/
+.btn {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 40px;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #fe3627; 
+}
+
+.btn:hover {
+    color: inherit;
+    background-color: white;
+}
+
+.btn:active {
+    box-shadow: inset 1px 1px 2px 0 #333;
+    opacity: 0.9;
 }
 
 /*стили шапки*/
 
 .page-header {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+
+    box-shadow: #333 0 0 10px 0px;
 }
 
 .header-top {
     display: flex;
     justify-content: space-around
-    padding-bottom: 5px;
 }
 
 .header-top p {
@@ -48,18 +84,21 @@ body {
     text-align: right;
 }
 
-
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: baseline;
+}
 
 .header-menu {
     margin: 0;
     padding: 0;
-    margin-top: 20px;
-    padding: 10px;
     list-style: none;
-    background-color: #333;
 }
 .header-menu li {
     display: inline-block;
+    padding: 0;
     margin-right: 20px;
     position: relative;
 }
@@ -72,12 +111,13 @@ body {
     
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    font-size: 22px;
+    color: #333;
 }
 .header-menu li a::after {
     content: "";
     display: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #333;
 }
 
 .header-menu li a:hover::after {
@@ -95,17 +135,49 @@ body {
 
 /*стили главного содержимого*/
 
-main ul {
+.features {
+    display: block;
+    
+}
+
+.features ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.features ul li {
+    display: block;
+    width: 200px;
+    list-style: none;
+}
+
+.features ul h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.features ul p {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    background-color: #333;
+}
+
+.services ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-main ul li {
+.services ul li {
 	display: block;
-	border: 1px solid #000;
-	min-height: 100px;
-	margin-bottom: 20px;
+	min-height: 500px;
+	margin-bottom: 60px;
+    background-color: white;
+    box-shadow: 3px 3px 10px 0px #888;
 }
 
 main h3 {
