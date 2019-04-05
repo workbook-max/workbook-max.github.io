@@ -187,5 +187,6 @@ main h3 {
 footer {
 	background-color: #333;
 	color: white;
+    font-weight: bold;
 	min-height: 100px;
 }
