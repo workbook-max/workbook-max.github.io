@@ -7,26 +7,51 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header class="page-header wrapper">
-        <div class="header-top">
-            <p class="header-description">Перенос, анализ, структурирование информации в электронный вид</p>
-            <img  class="header-logo" src="img/logo.png" alt="workbook" width="400px" height="50px">
-            <p class="header-contacts">
-                +7-965-525-3030<br>
-                workbook-max@yandex.ru
-            </p>
+    <header class="page-header"> <!-- ШАПКА САЙТА -->
+        <div class="wrapper"> <!-- Выравнивание контента по центру страницы -->
+           <div class="header-top">
+                <p class="header-description">Перенос, анализ, структурирование информации в электронный вид</p>
+                <img  class="header-logo" src="img/logo.png" alt="workbook" width="400px" height="50px">
+                <p class="header-contacts">
+                    +7-965-525-3030<br>
+                    workbook-max@yandex.ru
+                </p>
+           </div>
+           <div class="header-bottom">
+                <nav>
+                    <ul class="header-menu">
+                        <li><a href="#features-title">Преимущества</a></li>
+                        <li><a href="#services_title">Услуги</a></li>
+                        <li><a href="#contacts-title">Контакты</a></li>   
+                    </ul>
+                </nav>
+                <a href="#" class="btn">Сделать заказ</a>
+            </div>
         </div>
-        <nav>
-            <ul class="header-menu">
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#contacts">Контакты</a></li>   
-            </ul>
-        </nav>
+        
     </header>
-    <main  class="wrapper">
+    <main  class="wrapper"> <!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
         <h1>Главный заголовок</h1>
-        <section>
-            <h2 id="services">Услуги</h2>
+        <section class="features">
+           <h2 id="features-title">Преимущества</h2>
+           <ul>
+               <li>
+                   <h3>Быстро</h3>
+                   <p></p>
+               </li>
+               <li>
+                   <h3>Качественно</h3>
+                   <p></p>
+               </li>
+               <li>
+                   <h3>Дешево</h3>
+                   <p></p>
+               </li>
+           </ul>
+            
+        </section>
+        <section class="services">
+            <h2 id="services_title">Услуги</h2>
             <ul>
                <li>
                 <h3>Набор текста</h3>
@@ -46,12 +71,13 @@
                </li>
             </ul>
         </section>
+          
         <section>
             <h2 id="contacts">Контакты</h2>
             <p></p>
         </section>
     </main>
-    <footer  class="wrapper">
+    <footer> <!-- ПОДВАЛ -->
         <p>Подвал</p>
     </footer>
 </body>
