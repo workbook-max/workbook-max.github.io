@@ -4,6 +4,7 @@
 }
 
 .wrapper { /*центровщик контента*/
+    display: block;
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 50px;
@@ -14,13 +15,13 @@ body {
     font-family: sans-serif;
     font-size: 16px;
     color: #333;
-    background-image: /*с фоном еще надо поработать*/
+    /*background-image: /*с фоном еще надо поработать*/
         linear-gradient(170deg, #fde848 40%, transparent 40%),
         linear-gradient(5deg, #fde848 30%, white 30%),
         linear-gradient(to bottom, #fde848, #fde848);
     background-size: 100%, 100%, 1000% 1000%;
     background-repeat: no-repeat;
-    background-position: 0, 0, 0 1000px;
+    background-position: 0, 0, 0 1000px;*/
 }
 
 /*кнопка*/
@@ -51,45 +52,59 @@ body {
 /*стили шапки*/
 
 .page-header {
+    
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     box-sizing: border-box;
-
+    width: 100%;
+    position: fixed;
     box-shadow: #333 0 0 10px 0px;
+    background-color: white;
+    
 }
 
-.header-top {
+.header-columns {
     display: flex;
-    justify-content: space-around
+    justify-content: space-between;
 }
 
-.header-top p {
+.page-header p {
     display: block;
     margin: 0;
     padding: 0;
     width: 300px;
 }
 
-.header-description {
-    text-align: left;
-}
-
 .header-logo {
     display: inline-block;
     margin: 0 auto;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    color: #333;
+}
 
+.header-logo::first-letter {
+    font-style: italic;
+    color: white;
+    background-color: #04819E;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
 }
 
 .header-contacts {
     text-align: right;
+    font-size: 18px;
 }
 
-.header-bottom {
+/*.header-bottom {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     align-items: baseline;
-}
+}*/
 
 .header-menu {
     margin: 0;
@@ -134,6 +149,9 @@ body {
 }
 
 /*стили главного содержимого*/
+main {
+    padding-top: 80px;
+}
 
 .features {
     display: block;
