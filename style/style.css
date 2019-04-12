@@ -66,6 +66,7 @@ body {
 .header-columns {
     display: flex;
     justify-content: space-between;
+    align-items: center
 }
 
 .page-header p {
@@ -75,36 +76,10 @@ body {
     width: 300px;
 }
 
-.header-logo {
-    display: inline-block;
-    margin: 0 auto;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 40px;
-    color: #333;
-}
-
-.header-logo::first-letter {
-    font-style: italic;
-    color: white;
-    background-color: #04819E;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 10px;
-}
-
 .header-contacts {
     text-align: right;
-    font-size: 18px;
+    font-size: 24px;
 }
-
-/*.header-bottom {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    align-items: baseline;
-}*/
 
 .header-menu {
     margin: 0;
@@ -150,52 +125,63 @@ body {
 
 /*стили главного содержимого*/
 main {
-    padding-top: 80px;
+    padding-top: 120px;
 }
 
-.features {
+main section {
     display: block;
-    
+	margin-bottom: 60px;
+    background-color: white;
+    box-shadow: 3px 3px 10px 0px #888;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.features ul {
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-}
+.services {
+    background-image: url('../img/services_img.jpg');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: 80% center;
 
-.features ul li {
-    display: block;
-    width: 200px;
-    list-style: none;
-}
-
-.features ul h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.features ul p {
-    display: block;
-    margin: 0;
-    padding: 0;
-    height: 200px;
-    background-color: #333;
 }
 
 .services ul {
 	list-style: none;
 	margin: 0;
+    margin-left: 145px;
 	padding: 0;
 }
 
 .services ul li {
-	display: block;
-	min-height: 500px;
-	margin-bottom: 60px;
-    background-color: white;
-    box-shadow: 3px 3px 10px 0px #888;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.services ul li:first-child {
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.services ul li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #387aaf;
+}
+
+.services ul li:first-child::before {
+    border: 5px solid #387aaf;
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
 }
 
 main h3 {
