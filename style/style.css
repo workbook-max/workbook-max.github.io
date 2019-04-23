@@ -60,6 +60,8 @@ body {
     position: fixed;
     box-shadow: #333 0 0 10px 0px;
     background-color: white;
+    z-index: 1;
+
     
 }
 
@@ -132,12 +134,14 @@ main section {
     display: block;
 	margin-bottom: 60px;
     background-color: white;
-    box-shadow: 3px 3px 10px 0px #888;
+    box-shadow: 3px 3px 5px 0px #999;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .services {
+    margin-bottom: 40px;
+    
     background-image: url('../img/services_img.jpg');
     background-repeat: no-repeat;
     background-size: 200px;
@@ -159,6 +163,7 @@ main section {
     margin-top: 20px;
     font-size: 36px;
     line-height: 36px;
+    z-index: 0;
 }
 
 .services ul li:first-child {
@@ -184,8 +189,75 @@ main section {
     height: 15px;
 }
 
-main h3 {
-	margin: 0;
+.typing {
+
+    min-height: 500px;
+    display: flex;
+}
+
+.left-column,
+.right-column {
+    width: 260px;
+    text-align: center;
+}
+
+.middle-column {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.right-column .wrapper {
+    display: inline-block;
+}
+
+.typing h3 {
+    font-size: 30px;
+}
+
+.typing .price {
+    display: table-cell;
+    margin: 0;
+    padding: 20px;
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+    font-size: 38px;
+    color: white;
+    vertical-align: middle;
+    line-height: 40px;
+    background-image: url("../img/price_bg.png");
+    background-size: contain;
+}
+.typing .price sub {
+    font-size: 18px;
+}
+
+.typing table {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 24px;
+    
+}
+
+.typing table caption {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.typing table td:first-child {
+    position: relative;
+    padding-left: 30px;
+}
+
+.typing table td:first-child::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #387aaf;
 }
 
 footer {
